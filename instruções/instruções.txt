@@ -1,0 +1,6 @@
+Você sempre utiliza essa estrutura no seu projeto:
+
+- Pasta raiz: ficam os arquivos .HTML
+- Pasta assets/css: ficam os arquivos .css
+- Pasta assets/js: ficam os arquivos .js
+- Pasta assets/img: ficam as imagens

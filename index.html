@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Valverde | Saúde e Bem-estar</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i data-lucide="heart-pulse" class="logo-icon"></i>
+                Clínica Valverde
+            </a>
+
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <i data-lucide="menu" class="menu-icon"></i>
+            </button>
+
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#equipe" class="nav-link">Equipe</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1>Clínica Valverde</h1>
+                    <p class="subtitle">Saúde e Bem-estar com excelência em cada detalhe do seu atendimento.</p>
+                    <a href="#contato" class="btn btn-primary">Agendar Consulta</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Section -->
+        <section id="sobre" class="sobre section-padding">
+            <div class="container sobre-container">
+                <div class="sobre-text">
+                    <h2>Sobre a Clínica</h2>
+                    <p>A Clínica Valverde foi fundada com o propósito de oferecer um atendimento médico humanizado,
+                        aliando tecnologia de ponta ao carinho e atenção que você e sua família merecem.</p>
+
+                    <div class="valores-list">
+                        <div class="valor-item">
+                            <i data-lucide="check-circle" class="valor-icon"></i>
+                            <div>
+                                <strong>Missão</strong>
+                                <p>Promover saúde e qualidade de vida com excelência e ética.</p>
+                            </div>
+                        </div>
+                        <div class="valor-item">
+                            <i data-lucide="check-circle" class="valor-icon"></i>
+                            <div>
+                                <strong>Visão</strong>
+                                <p>Ser referência nacional em atendimento médico humanizado.</p>
+                            </div>
+                        </div>
+                        <div class="valor-item">
+                            <i data-lucide="check-circle" class="valor-icon"></i>
+                            <div>
+                                <strong>Valores</strong>
+                                <p>Respeito, empatia, inovação e compromisso com o paciente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-image-wrapper">
+                    <!-- Placeholder image via CSS background -->
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"
+                        alt="Fachada da Clínica Valverde" class="sobre-img placeholder-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipe Section -->
+        <section id="equipe" class="equipe section-padding bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nossa Equipe</h2>
+                    <p>Profissionais altamente qualificados dedicados à sua saúde.</p>
+                </div>
+
+                <div class="equipe-grid">
+                    <!-- Profissional 1 -->
+                    <div class="equipe-card">
+                        <img src="assets/img/cardiologista.png" alt="Foto do Dr. Carlos Silva"
+                            class="prof-img placeholder-img">
+                        <div class="equipe-info">
+                            <h3>Dr. Carlos Silva</h3>
+                            <span class="especialidade">Cardiologia</span>
+                            <p>Especialista em saúde do coração com mais de 15 anos de experiência.</p>
+                        </div>
+                    </div>
+
+                    <!-- Profissional 2 -->
+                    <div class="equipe-card">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"
+                            alt="Foto da Dra. Ana Souza" class="prof-img placeholder-img">
+                        <div class="equipe-info">
+                            <h3>Dra. Ana Souza</h3>
+                            <span class="especialidade">Pediatria</span>
+                            <p>Cuidado humanizado e atencioso para o desenvolvimento saudável das crianças.</p>
+                        </div>
+                    </div>
+
+                    <!-- Profissional 3 -->
+                    <div class="equipe-card">
+                        <img src="assets/img/ortopedista.png" alt="Foto do Dr. Roberto Mendes"
+                            class="prof-img placeholder-img">
+                        <div class="equipe-info">
+                            <h3>Dr. Roberto Mendes</h3>
+                            <span class="especialidade">Ortopedia</span>
+                            <p>Tratamento avançado de lesões articulares e reabilitação esportiva.</p>
+                        </div>
+                    </div>
+
+                    <!-- Profissional 4 -->
+                    <div class="equipe-card">
+                        <img src="assets/img/dermatologista.png" alt="Foto da Dra. Julia Costa"
+                            class="prof-img placeholder-img">
+                        <div class="equipe-info">
+                            <h3>Dra. Julia Costa</h3>
+                            <span class="especialidade">Dermatologia</span>
+                            <p>Especialista em cuidados estéticos e prevenção de doenças da pele.</p>
+                        </div>
+                    </div>
+
+                    <!-- Profissional 5 -->
+                    <div class="equipe-card">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"
+                            alt="Foto do Dr. Marcos Lima" class="prof-img placeholder-img">
+                        <div class="equipe-info">
+                            <h3>Dr. Marcos Lima</h3>
+                            <span class="especialidade">Clínico Geral</span>
+                            <p>Acompanhamento médico contínuo e preventivo para todas as idades.</p>
+                        </div>
+                    </div>
+
+                    <!-- Profissional 6 -->
+                    <div class="equipe-card">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"
+                            alt="Foto da Dra. Beatriz Santos" class="prof-img placeholder-img">
+                        <div class="equipe-info">
+                            <h3>Dra. Beatriz Santos</h3>
+                            <span class="especialidade">Ginecologia</span>
+                            <p>Foco na saúde da mulher, gestação e tratamentos hormonais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviços Section -->
+        <section id="servicos" class="servicos section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nossos Serviços</h2>
+                    <p>Ampla estrutura para atender suas necessidades médicas em um só lugar.</p>
+                </div>
+
+                <div class="servicos-grid">
+                    <div class="servico-card">
+                        <div class="servico-icon-wrapper">
+                            <i data-lucide="stethoscope" class="servico-icon"></i>
+                        </div>
+                        <h3>Consultas Médicas</h3>
+                        <p>Atendimento especializado em diversas áreas da medicina com foco na prevenção.</p>
+                    </div>
+
+                    <div class="servico-card">
+                        <div class="servico-icon-wrapper">
+                            <i data-lucide="activity" class="servico-icon"></i>
+                        </div>
+                        <h3>Exames Clínicos</h3>
+                        <p>Laboratório moderno para realização de exames de sangue e análises clínicas.</p>
+                    </div>
+
+                    <div class="servico-card">
+                        <div class="servico-icon-wrapper">
+                            <i data-lucide="microscope" class="servico-icon"></i>
+                        </div>
+                        <h3>Diagnóstico por Imagem</h3>
+                        <p>Equipamentos de alta tecnologia para ultrassonografia e raios-X precisos.</p>
+                    </div>
+
+                    <div class="servico-card">
+                        <div class="servico-icon-wrapper">
+                            <i data-lucide="shield-plus" class="servico-icon"></i>
+                        </div>
+                        <h3>Check-up Preventivo</h3>
+                        <p>Programas completos de avaliação da saúde para homens e mulheres.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato Section -->
+        <section id="contato" class="contato section-padding bg-light">
+            <div class="container contato-container">
+                <div class="contato-info-box">
+                    <h2>Entre em Contato</h2>
+                    <p>Agende sua consulta ou tire suas dúvidas através dos nossos canais de atendimento.</p>
+
+                    <ul class="contato-details">
+                        <li>
+                            <i data-lucide="map-pin"></i>
+                            <span>R. Halfeld, 1.179 - Centro, Juiz de Fora - MG</span>
+                        </li>
+                        <li>
+                            <i data-lucide="clock"></i>
+                            <span>Seg. a Sex.: 08h às 18h<br>Sábados: 08h às 12h</span>
+                        </li>
+                        <li>
+                            <i data-lucide="phone"></i>
+                            <span>(32) 99969-0215</span>
+                        </li>
+                    </ul>
+
+                    <a href="https://wa.me/5532999690215" target="_blank" class="btn btn-whatsapp">
+                        <i data-lucide="message-circle"></i>
+                        Contato via WhatsApp
+                    </a>
+                </div>
+
+                <div class="contato-form-box">
+                    <form id="contact-form" class="form">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="4"
+                                placeholder="Como podemos ajudar?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo">
+                    <i data-lucide="heart-pulse"></i>
+                    Clínica Valverde
+                </a>
+                <p>Saúde e Bem-estar com excelência.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Redes Sociais</h4>
+                <div class="footer-networks">
+                    <a href="https://www.instagram.com/koevalverde/" target="_blank" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gabrielvalv" target="_blank" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect width="4" height="12" x="2" y="9" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Clínica Valverde. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons Library -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
