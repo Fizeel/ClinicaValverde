@@ -3,38 +3,47 @@
    ========================================================================== */
 :root {
     /* Cores Primárias (Tons mais claros e vibrantes) */
-    --color-primary: #0EA5E9;       /* Azul Claro / Sky 500 */
-    --color-primary-dark: #0284C7;  /* Azul Escuro (Hover) / Sky 600 */
-    --color-primary-light: #E0F2FE; /* Fundo Azul Muito Claro / Sky 100 */
-    
-    --color-secondary: #2DD4BF;     /* Verde Água / Teal 400 */
-    --color-secondary-dark: #14B8A6;/* Verde Água Escuro (Hover) / Teal 500 */
-    
+    --color-primary: #0EA5E9;
+    /* Azul Claro / Sky 500 */
+    --color-primary-dark: #0284C7;
+    /* Azul Escuro (Hover) / Sky 600 */
+    --color-primary-light: #E0F2FE;
+    /* Fundo Azul Muito Claro / Sky 100 */
+
+    --color-secondary: #2DD4BF;
+    /* Verde Água / Teal 400 */
+    --color-secondary-dark: #14B8A6;
+    /* Verde Água Escuro (Hover) / Teal 500 */
+
     --color-whatsapp: #25D366;
     --color-whatsapp-dark: #128C7E;
 
     /* Cores Neutras */
     --color-bg-body: #FFFFFF;
-    --color-bg-light: #F8FAFC;      /* Slate 50 */
-    --color-placeholder: #E2E8F0;   /* Slate 200 */
-    
-    --color-text-main: #1E293B;     /* Slate 800 */
-    --color-text-muted: #64748B;    /* Slate 500 */
+    --color-bg-light: #F8FAFC;
+    /* Slate 50 */
+    --color-placeholder: #E2E8F0;
+    /* Slate 200 */
+
+    --color-text-main: #1E293B;
+    /* Slate 800 */
+    --color-text-muted: #64748B;
+    /* Slate 500 */
     --color-border: #E2E8F0;
 
     /* Tipografia */
     --font-family: 'Inter', sans-serif;
-    
+
     /* Espaçamentos e Layout */
     --container-max-width: 1200px;
     --padding-section: 4rem 1.5rem;
     --border-radius: 8px;
     --border-radius-lg: 16px;
-    
+
     /* Transições */
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
-    
+
     /* Sombras */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -51,7 +60,8 @@
 }
 
 html {
-    scroll-behavior: smooth; /* Rolagem suave pelas âncoras */
+    scroll-behavior: smooth;
+    /* Rolagem suave pelas âncoras */
 }
 
 body {
@@ -207,7 +217,8 @@ img {
     width: 100%;
     background-color: var(--color-bg-body);
     box-shadow: var(--shadow-md);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* Escondido usando clip-path para animação suave */
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    /* Escondido usando clip-path para animação suave */
     transition: clip-path var(--transition-normal);
 }
 
@@ -464,6 +475,43 @@ img {
     color: var(--color-text-main);
 }
 
+/* ==========================================================================
+   Contato Section - Estrutura Adicional (Mapa e Sub-grade)
+   ========================================================================== */
+.contato-nested-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contato-details {
+    margin-bottom: 0;
+    /* Removida a margem extra, a grade cuida disso */
+}
+
+.map-wrapper {
+    width: 100%;
+    height: 250px;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+}
+
+.map-wrapper iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.whatsapp-wrapper {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
 .form {
     background-color: var(--color-bg-body);
     padding: 2rem;
@@ -593,7 +641,7 @@ img {
     .servicos-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .footer-container {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -602,7 +650,8 @@ img {
 /* Desktops (>= 1024px) */
 @media (min-width: 1024px) {
     .menu-toggle {
-        display: none; /* Esconde hamburger no desktop */
+        display: none;
+        /* Esconde hamburger no desktop */
     }
 
     .nav-menu {
@@ -658,5 +707,12 @@ img {
     .contato-container {
         grid-template-columns: 1fr 1fr;
         align-items: start;
+    }
+
+    .contato-nested-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        gap: 1.5rem;
     }
 }
